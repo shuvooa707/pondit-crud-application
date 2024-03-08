@@ -2,9 +2,11 @@ package com.cruddb.ponditcruddb.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.ToString;
 
 @Entity(name = "books")
 @Data
+@ToString
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
